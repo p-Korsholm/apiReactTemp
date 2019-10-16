@@ -28,18 +28,24 @@ namespace secAPI.Controllers
             this.configurationRoot = configurationRoot;
         }
 
-        [HttpPost("api/auth/login")]
-        public async Task<IActionResult> Login([FromBody] LoginModel loginModel)
-        {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
+        //---------------------------------
+        //---------------------------------
+        //----- Cookie authentication -----
+        //---------------------------------
+        //---------------------------------
 
-            var result = await signInManager.PasswordSignInAsync(loginModel.username, loginModel.password, false, false);
-            if (result.Succeeded)
-                return Ok();
+        //[HttpPost("api/auth/login")]
+        //public async Task<IActionResult> Login([FromBody] LoginModel loginModel)
+        //{
+        //    if (!ModelState.IsValid)
+        //        return BadRequest(ModelState);
 
-            return BadRequest();
-        }
+        //    var result = await signInManager.PasswordSignInAsync(loginModel.username, loginModel.password, false, false);
+        //    if (result.Succeeded)
+        //        return Ok();
+
+        //    return BadRequest();
+        //}
 
         [HttpPost("api/auth/token")]
         public async Task<IActionResult> CreateToken([FromBody] LoginModel loginModel)
