@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "secAPI", "secAPI\secAPI.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dataStore", "dataStore\dataStore.csproj", "{C7ED03DD-2B76-47EF-8AA2-98C7FAD61446}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "secAPI.test", "secAPI.test\secAPI.test.csproj", "{2D5E037B-0A94-478D-8351-9687D1DCF794}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,5 +21,9 @@ Global
 		{C7ED03DD-2B76-47EF-8AA2-98C7FAD61446}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7ED03DD-2B76-47EF-8AA2-98C7FAD61446}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7ED03DD-2B76-47EF-8AA2-98C7FAD61446}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D5E037B-0A94-478D-8351-9687D1DCF794}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D5E037B-0A94-478D-8351-9687D1DCF794}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D5E037B-0A94-478D-8351-9687D1DCF794}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D5E037B-0A94-478D-8351-9687D1DCF794}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
