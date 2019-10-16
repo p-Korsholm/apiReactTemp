@@ -6,13 +6,11 @@ export const LOGOUT = "LOGOUT";
 export const LOGOUT_SUCCESS = "LOGOUT";
 export const LOGOUT_FAIL = "LOGOUT";
 
-export function login(loginModel){
-    return {
-        type:LOGIN,
-        payload:{
-            request:{
-                
-            }
-        }
+export function login(loginModel) {
+  return {
+    type: LOGIN,
+    payload: {
+      request: {}
     }
+  };
 }
