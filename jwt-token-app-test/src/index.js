@@ -8,12 +8,13 @@ import configureStore from "./redux/configureStore";
 import { Provider } from "react-redux";
 
 const Store = configureStore(window.__STATE__);
+
 ReactDOM.render(
-  <Router>
-    <Provider store={Store}>
+  <Provider store={Store}>
+    <Router>
       <App />
-    </Provider>
-  </Router>,
+    </Router>
+  </Provider>,
   document.getElementById("root")
 );
 
