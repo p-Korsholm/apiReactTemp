@@ -10,6 +10,7 @@ class Login extends Component {
 
     this.handleInputChanged = this.handleInputChanged.bind(this);
     this.handleLogin = this.handleLogin.bind(this);
+    this.handleLogout = this.handleLogout.bind(this);
   }
 
   handleInputChanged(event) {
@@ -21,6 +22,11 @@ class Login extends Component {
   handleLogin(event) {
     const loginModel = { ...this.state };
     this.props.login(loginModel);
+  }
+
+  handleLogout(event) {
+    this.props.logout();
+    this.props.history.push("/");
   }
 
   render() {
@@ -64,7 +70,7 @@ class Login extends Component {
               </tr>
             </tbody>
           </table>
-          <input type="button" value="logout" onClick={this.props.logout} />
+          <input type="button" value="logout" onClick={this.handleLogout} />
         </form>
       </div>
     );
