@@ -8,6 +8,7 @@ namespace secAPI
         [Required(ErrorMessage = "username cannot be empty")]
         public string username { get; set; }
         [Required(ErrorMessage = "password cannot be empty")]
+        [MinLength(8)]
         public string password { get; set; }
     }
 }
